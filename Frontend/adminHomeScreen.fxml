@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="657.0" prefWidth="766.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="userlogin.AdminHomeScreenController">
+   <bottom>
+      <AnchorPane prefHeight="592.0" prefWidth="766.0" style="-fx-background-color: #446491;" BorderPane.alignment="CENTER">
+         <children>
+            <GridPane alignment="CENTER" prefHeight="571.0" prefWidth="766.0">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Button mnemonicParsing="false" prefHeight="362.0" prefWidth="383.0" text="Button" />
+                  <Button fx:id="ADprofBtn" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#switchToProfReg" prefHeight="301.0" prefWidth="404.0" style="-fx-background-color: #446491; -fx-border-color: #E4FCF9; -fx-padding: 45;" text="Add/Delete User " textFill="#e4fcf9" textOverrun="CENTER_ELLIPSIS" GridPane.rowIndex="1">
+                     <font>
+                        <Font name="System Bold" size="31.0" />
+                     </font>
+                  </Button>
+                  <ButtonBar maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="278.0" prefWidth="383.0" style="-fx-background-color: #446491;" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                     <buttons>
+                        <Button alignment="CENTER" mnemonicParsing="false" prefHeight="294.0" prefWidth="374.0" style="-fx-background-color: #446491;" text="AAST" textFill="#e4fcf9" textOverrun="CENTER_ELLIPSIS">
+                           <font>
+                              <Font name="System Bold" size="50.0" />
+                           </font>
+                        </Button>
+                     </buttons>
+                  </ButtonBar>
+                  <Button fx:id="RegisterCourseBtn" alignment="CENTER" contentDisplay="CENTER" layoutX="393.0" layoutY="10.0" mnemonicParsing="false" onAction="#switchToAdminRegisterCourseForStudent" prefHeight="284.0" prefWidth="383.0" style="-fx-background-color: #446491;" text="Register course for student" textFill="#e4fcf9" textOverrun="CENTER_ELLIPSIS">
+                     <font>
+                        <Font name="System Bold" size="26.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="ADcourseBtn" alignment="CENTER" contentDisplay="CENTER" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#switchToCourseReg" prefHeight="285.0" prefWidth="382.0" style="-fx-background-color: #446491; -fx-border-color: #E4FCF9;" text="Add/Delete Course " textFill="#e4fcf9" textOverrun="CENTER_ELLIPSIS" GridPane.columnIndex="1">
+                     <font>
+                        <Font name="System Bold" size="31.0" />
+                     </font>
+                  </Button>
+               </children>
+            </GridPane>
+         </children>
+      </AnchorPane>
+   </bottom>
+   <top>
+      <AnchorPane prefHeight="92.0" prefWidth="773.0" style="-fx-background-color: #E4FCF9; -fx-border-color: #446491; -fx-border-width: 3;" BorderPane.alignment="CENTER">
+         <children>
+            <Text fill="#446491" layoutX="269.0" layoutY="58.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Administrator ">
+               <font>
+                  <Font name="System Bold" size="36.0" />
+               </font>
+            </Text>
+             <Button fx:id="closeButton" layoutX="739.0" layoutY="5.0" mnemonicParsing="false" onAction="#exit" prefHeight="26.0" prefWidth="38.0" style="-fx-background-color: transparent;" text="X" textFill="#446491">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font></Button>
+         </children>
+      </AnchorPane>
+   </top>
+</BorderPane>

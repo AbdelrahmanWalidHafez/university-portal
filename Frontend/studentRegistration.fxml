@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="660.0" prefWidth="860.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1"fx:controller="userlogin.AdminHomeScreenController">
+   <children>
+      <BorderPane prefHeight="200.0" prefWidth="200.0">
+         <right>
+            <AnchorPane prefHeight="660.0" prefWidth="425.0" style="-fx-border-radius: 90;" BorderPane.alignment="CENTER" />
+         </right>
+         <top>
+            <AnchorPane prefHeight="660.0" prefWidth="915.0" style="-fx-border-radius: 90;" BorderPane.alignment="CENTER">
+               <children>
+                  <Label layoutX="28.0" layoutY="23.0" text="SSN" />
+                  <TextField layoutX="22.0" layoutY="41.0" opacity="0.57" />
+                  <Label layoutX="14.0" layoutY="109.0" text="First Name" />
+                  <Label layoutX="16.0" layoutY="188.0" text="Middle Name" />
+                  <Label layoutX="16.0" layoutY="260.0" text="Last Name" />
+                  <Label layoutX="18.0" layoutY="322.0" text="D.O.B" />
+                  <Label layoutX="20.0" layoutY="391.0" text="Address" />
+                  <Label layoutX="18.0" layoutY="461.0" text="phone No." />
+                  <Label layoutX="23.0" layoutY="526.0" text="Gender" />
+                  <AnchorPane prefHeight="660.0" prefWidth="235.0" style="-fx-border-radius: 90; -fx-background-color: #446491;">
+                     <children>
+                        <Label layoutX="15.0" layoutY="14.0" text="SSN" textFill="#efeeee">
+                           <font>
+                              <Font name="System Bold" size="13.0" />
+                           </font></Label>
+                        <Label layoutX="15.0" layoutY="92.0" text="First Name" textFill="#efeeee">
+                           <font>
+                              <Font name="System Bold" size="13.0" />
+                           </font></Label>
+                        <Label layoutX="11.0" layoutY="170.0" text="Middle Name" textFill="#fffcfc">
+                           <font>
+                              <Font name="System Bold" size="13.0" />
+                           </font></Label>
+                        <Label layoutX="10.0" layoutY="310.0" text="D.O.B" textFill="#fffcfc">
+                           <font>
+                              <Font name="System Bold" size="13.0" />
+                           </font></Label>
+                        <Label layoutX="12.0" layoutY="379.0" text="Address" textFill="#efeeee">
+                           <font>
+                              <Font name="System Bold" size="13.0" />
+                           </font></Label>
+                        <TextField layoutX="14.0" layoutY="121.0" />
+                        <ComboBox layoutX="11.0" layoutY="532.0" prefWidth="150.0" promptText="Choose gender" />
+                        <TextField layoutX="11.0" layoutY="42.0" />
+                        <TextField layoutX="11.0" layoutY="199.0" />
+                        <TextField layoutX="11.0" layoutY="268.0" />
+                        <DatePicker layoutX="10.0" layoutY="336.0" prefHeight="22.0" prefWidth="150.0" promptText="Choose Date of birh" />
+                        <TextField layoutX="11.0" layoutY="398.0" />
+                        <TextField layoutX="11.0" layoutY="466.0" />
+                        <Button layoutX="14.0" layoutY="585.0" mnemonicParsing="false" style="-fx-border-radius: 45; -fx-background-color: #E4FCF9;" text="Add" textFill="#446491">
+                           <font>
+                              <Font name="System Bold" size="13.0" />
+                           </font></Button>
+                        <Button layoutX="81.0" layoutY="585.0" mnemonicParsing="false" style="-fx-background-color: #E4FCF9; -fx-border-radius: 45;" text="Update" textFill="#446491">
+                           <font>
+                              <Font name="System Bold" size="13.0" />
+                           </font></Button>
+                        <Button layoutX="161.0" layoutY="585.0" mnemonicParsing="false" style="-fx-background-color: #E4FCF9; -fx-border-radius: 45;" text="Delete" textFill="#446491">
+                           <font>
+                              <Font name="System Bold" size="13.0" />
+                           </font></Button>
+                        <Label layoutX="12.0" layoutY="241.0" text="Last Name" textFill="#fcfcfc">
+                           <font>
+                              <Font name="System Bold" size="13.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="12.0" layoutY="437.0" text="Phone Number" textFill="#efeeee">
+                           <font>
+                              <Font name="System Bold" size="13.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="14.0" layoutY="507.0" text="Gender" textFill="#efeeee">
+                           <font>
+                              <Font name="System Bold" size="13.0" />
+                           </font>
+                        </Label>
+                        <Button layoutX="11.0" layoutY="624.0" mnemonicParsing="false" onAction="#switchToHomeScren" style="-fx-background-color: #E4FCF9; -fx-border-radius: 45;" text="Prev page" textFill="#446491">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </AnchorPane>
+                  <Label layoutX="518.0" layoutY="400.0" />
+                  <TableView layoutX="234.0" layoutY="85.0" prefHeight="576.0" prefWidth="626.0">
+                    <columns>
+                      <TableColumn prefWidth="54.40000915527344" text="SSN" />
+                      <TableColumn prefWidth="84.0" text="First Name" />
+                        <TableColumn prefWidth="87.20001220703125" text="Middle Name" />
+                        <TableColumn prefWidth="75.0" text="Last Name" />
+                        <TableColumn prefWidth="75.0" text="D.O.B" />
+                        <TableColumn prefWidth="75.0" text="Address" />
+                        <TableColumn prefWidth="88.0001220703125" text="Phone No." />
+                        <TableColumn prefWidth="82.39990234375" text="Gender" />
+                    </columns>
+                  </TableView>
+                  <HBox alignment="CENTER" layoutX="236.0" layoutY="1.0" prefHeight="85.0" prefWidth="628.0" style="-fx-background-color: #E4FCF9;">
+                     <children>
+                        <Text fill="#446491" strokeType="OUTSIDE" strokeWidth="0.0" text="Student Registration ">
+                           <font>
+                              <Font name="System Bold" size="35.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </HBox>
+                   <Button fx:id="closeButton" layoutX="640.0" layoutY="2.0" mnemonicParsing="false" onAction="#exit" style="-fx-background-color: transparent;" text="X" textFill="#446491">
+                           <font>
+                              <Font name="System Bold" size="13.0" />
+                           </font>
+                        </Button>
+               </children>
+            </AnchorPane>
+         </top>
+      </BorderPane>
+   </children>
+</StackPane>

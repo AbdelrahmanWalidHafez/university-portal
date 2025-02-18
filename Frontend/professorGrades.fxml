@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="810.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="userlogin.ProfessorGradesController">
+    <children>
+        <AnchorPane prefHeight="200.0" prefWidth="200.0">
+            <children>
+                <BorderPane prefHeight="700.0" prefWidth="810.0">
+                    <left>
+                        <AnchorPane prefHeight="700.0" prefWidth="246.0" style="-fx-background-color: #446491;" BorderPane.alignment="CENTER">
+                            <children>
+                                <Label layoutX="12.0" layoutY="47.0" text="Registration Number" textFill="WHITE">
+                                    <font>
+                                        <Font name="System Bold" size="16.0"/>
+                                    </font>
+                                </Label>
+                                <TextField fx:id="SRegNO" layoutX="10.0" layoutY="79.0"/>
+                                <TextField fx:id="SstudGrade" layoutX="10.0" layoutY="161.0"/>
+                                <Label layoutX="10.0" layoutY="128.0" text="Student Grade" textFill="#fffcfc">
+                                    <font>
+                                        <Font name="System Bold" size="14.0"/>
+                                    </font>
+                                </Label>
+                                <Button fx:id="updateGradeBtn" layoutX="21.0" layoutY="396.0" mnemonicParsing="false" onAction="#update" style="-fx-background-color: #E4FCF9; -fx-border-radius: 77;" text="Update" textFill="#446491">
+                                    <font>
+                                        <Font name="System Bold" size="15.0"/>
+                                    </font>
+                                </Button>
+                                <Button fx:id="prevBtn" onAction="#prev" prefHeight="30.0" prefWidth="109.0" style="-fx-background-color: #E4FCF9; -fx-border-radius: 77;" text="Prev Page" textFill="#446491">
+                                    <font>
+                                        <Font name="System Bold" size="14.0"/>
+                                    </font>
+                                </Button>
+                                <Label layoutX="16.0" layoutY="212.0" text="Course Code" textFill="#fffcfc">
+                                    <font>
+                                        <Font name="System Bold" size="14.0"/>
+                                    </font>
+                                </Label>
+                                <TextField fx:id="ScourseCode" layoutX="10.0" layoutY="242.0"/>
+                                <Label layoutX="21.0" layoutY="286.0" text="Grade Type" textFill="#efebeb">
+                                    <font>
+                                        <Font name="System Bold" size="15.0"/>
+                                    </font>
+                                </Label>
+                                <TextField fx:id="SgradeType" layoutX="10.0" layoutY="308.0"/>
+                            </children>
+                        </AnchorPane>
+                    </left>
+                    <right>
+                        <AnchorPane prefHeight="700.0" prefWidth="566.0" style="-fx-background-color: #E4FCF9;" BorderPane.alignment="CENTER">
+                            <children>
+                                <Label fx:id="studentGrade" layoutX="183.0" layoutY="25.0" prefHeight="39.0" prefWidth="202.0" text="Student Grades" textFill="#446491">
+                                    <font>
+                                        <Font name="System Bold" size="27.0"/>
+                                    </font>
+                                </Label>
+                                <TableView fx:id="resultTableView" layoutX="-1.0" layoutY="118.0" prefHeight="582.0" prefWidth="568.0">
+                                    <columns>
+                                        <TableColumn fx:id="resultColumn" prefWidth="567.1999725103378" text="Update Result"/>
+                                    </columns>
+                                </TableView>
+                                <Button fx:id="closeButton" layoutX="540.0" mnemonicParsing="false" onAction="#exit" style="-fx-background-color: transparent;" text="X" textFill="#446491">
+                                    <font>
+                                        <Font name="System Bold" size="13.0"/>
+                                    </font>
+                                </Button>
+                            </children>
+                        </AnchorPane>
+                    </right>
+                </BorderPane>
+            </children>
+        </AnchorPane>
+    </children>
+</StackPane>
